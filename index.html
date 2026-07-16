@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset{
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+   <fieldset>
+    <legend><b>Student Registration Form</b></legend>
+  <form action="">
+<table border="1" cellpadding="10" style="border-collapse: collapse;">
+        <tr>
+            <td><label for="username"> Full Name:</label></td>
+            <td><input type="text" name="username" id="username" placeholder="Enteryour full name"></td>
+        </tr>
+        <tr>
+            <td><label for="email"> Email:</label></td>
+            <td><input type="email" name="email" id="email" placeholder="Enter your email"></td>
+        </tr>
+        <tr>
+            <td><label for="tel" >Telephone:</label></td>
+            <td>
+                <input type="tel" name="tel" id="tel" placeholder="Enter your 10 digit number" maxlength="10" pattern="[0-9]{10}">
+            </td>
+        </tr>
+        <tr>
+            <td> <label for="dob">Date of Birth:</label></td>
+            <td ><input type="date" name="dob" id="dob" max="2026-08-30" min="2004-03-21"></td>
+        </tr>
+        <tr>
+    <td>Gender</td>
+    <td colspan="3">
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="Female" style="margin-left:20px;">
+        <label for="female">Female</label>
+
+        <input type="radio" name="gender" id="other" value="Other" style="margin-left:20px;">
+        <label for="other">Other</label>
+    </td>
+</tr>
+       <tr >
+        <td style="background-color: rgb(146, 203, 229);"><label for="address">Address:</label></td>
+        <td><textarea name="address" id="address" rows="3" cols="30"
+                            placeholder="Enter your address" required></textarea></td>
+       </tr>
+       <tr>
+        <td><label for="course">Course:</label></td>
+        <td>
+        <select name="course" id="course">
+               <option value="B.Tech">B.Tech</option>
+               <option value="Python">MCA</option>
+            <option value="Web Development">MBA</option>
+            <option value="Data Science">polytechnc</option>
+            <option value="DevOps">Data Science</option>
+        </select></td>
+
+       </tr>
+       <tr>
+        <td><label for="branch">Branch:</label></td>
+        <td><select name="branch" id="branch" >
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="ME">ME</option>
+            <option value="CE">CE</option>
+            <option value="Computer applications"></option>
+            <option value="business administration"></option>
+            <option value=""></option>
+        </select></td>
+       </tr>
+       <tr>
+            <td><label for="year">Year:</label></td>
+            <td><input type="date" name="year" id="year" placeholder="Enter your year" max="2026-07-20" min="2004-03-21"></td>
+         </tr>
+         <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit" onclick="alert('Form submitted successfully!')">
+    Submit
+</button>
+              
+                <input type="reset" value="Reset">
+            </td>
+         </tr>
+    </table>
+
+    
+</form>
+
+   </fieldset>
+</body>
+</html>
